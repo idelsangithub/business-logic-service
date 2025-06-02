@@ -44,31 +44,23 @@ $ npm run start:dev
 $ npm run start:prod
 ```
 
-## Run tests
 
-```bash
-# unit tests
-$ npm run test
 
-# e2e tests
-$ npm run test:e2e
+## File .ENV
+Add file in the root of project 
+# Puerto para este servicio (Business Logic Service)
+PORT=3000
 
-# test coverage
-$ npm run test:cov
-```
+# URL de tu DB Service
+DB_SERVICE_URL=http://localhost:3002
 
-## Deployment
+# Configuración para el envío de correos (ejemplo con Mailtrap para desarrollo)
+EMAIL_HOST=sandbox.smtp.mailtrap.io     //configuarcion para mailtrap.io
+EMAIL_PORT=2525
+EMAIL_USER=******   // colocar usuario y password de mailtrap.io para el envio del correo
+EMAIL_PASS=*******
+EMAIL_FROM=no-reply@billetera.com
 
-When you're ready to deploy your NestJS application to production, there are some key steps you can take to ensure it runs as efficiently as possible. Check out the [deployment documentation](https://docs.nestjs.com/deployment) for more information.
-
-If you are looking for a cloud-based platform to deploy your NestJS application, check out [Mau](https://mau.nestjs.com), our official platform for deploying NestJS applications on AWS. Mau makes deployment straightforward and fast, requiring just a few simple steps:
-
-```bash
-$ npm install -g @nestjs/mau
-$ mau deploy
-```
-
-With Mau, you can deploy your application in just a few clicks, allowing you to focus on building features rather than managing infrastructure.
 
 ## Resources
 
